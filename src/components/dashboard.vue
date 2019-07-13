@@ -23,15 +23,16 @@
     </v-speed-dial>
 
     <!-- first  card  class=" scroll-y"-->
-    <div v-show="!show">
+    <div v-show="!show" id="app">
       <v-container
+        fluid
         id="scroll-target"
         grid-list-sm
         text-xs-center
         style="margin-right: 1px; max-height: 400px;"
       >
         <v-layout align-end justify-end row fill-height>
-          <v-flex xs12 sm5 md4 lg4>
+          <v-flex xs12 sm5 md4 lg3>
             <v-card dark class="intercom">
               <div class="card1">
                 <v-layout column fill-height>
@@ -96,6 +97,5 @@ export default {
 </script>
 
 <style>
-@import "../styles/dashboard.css"
-
+@import "../styles/dashboard.css";
 </style>
